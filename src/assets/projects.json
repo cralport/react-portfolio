@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "Run Buddy",
+        "description": "An application to schedule a trainer",
+        "tools": "HTML, CSS",
+        "gitLink": "https://github.com/cralport/run-buddy",
+        "deployedLink": "https://cralport.github.io/run-buddy/"
+    },
+    {
+        "id": 2,
+        "title": "Horieson",
+        "description": "A refactored code project from the beginning of bootcamp",
+        "tools": "HTML, CSS",
+        "gitLink": "https://github.com/cralport/horiseon2",
+        "deployedLink": "https://cralport.github.io/horiseon2/"
+    },
+    {
+        "id": 3,
+        "title": "README Generator",
+        "description": "This application is a README generator that uses inquirer to spit out a markdown readme",
+        "tools": "Node, Inquirer",
+        "gitLink": "https://github.com/cralport/readme-generator"
+    },
+    {
+        "id": 4,
+        "title": "Work Day Scheduler",
+        "description": "An application that allows the user to track events during the work day",
+        "tools": "HTML, CSS, JavaScript, Moment.js",
+        "gitLink": "https://github.com/cralport/work-day-scheduler",
+        "deployedLink": "https://cralport.github.io/work-day-scheduler/"
+    },
+    {
+        "id": 5,
+        "title": "Budget Tracker",
+        "description": "An application that allows the user to add/subtract from their budget, with offline capabilites",
+        "tools": "MongoDB, Express, JavaScript",
+        "gitLink": "https://github.com/cralport/budget-tracker",
+        "deployedLink": "https://sheltered-scrubland-35122.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "title": "Social Network API",
+        "description": "A backend application that allows the user to use Mongo to use CRUD",
+        "tools": "MongoDB, Express, Node.js, Mongoose",
+        "gitLink": "https://github.com/cralport/Social-Network-API"
+    },
+    {
+        "id": 7,
+        "title": "Jack of All Trades (Group Project)",
+        "description": "A MERN stack application allowing the user to find a contractor",
+        "tools": "MongoDB, React, Express, Node.js",
+        "gitLink": "https://github.com/jaimecedillo/mern-project",
+        "deployedLink": "https://jacksofalltrades.herokuapp.com/"
+    }
+    
+]

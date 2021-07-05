@@ -11,6 +11,7 @@ function App() {
       <Nav></Nav>
       <ContactForm></ContactForm>
       <About></About>
+      <Projects></Projects>
     </div>
   )
 }
