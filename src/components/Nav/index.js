@@ -1,33 +1,36 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import { Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory
-    } = props
-
-    useEffect(() => {
-        document.title = 'Cory Alport - ' + currentCategory
-    },[currentCategory]);
-
+function Navigation(props) {
     return (
-        <nav>
-            <ul className='flex-row'>
-                {categories.map((category) => (
-                    <li className={`mx-2 ${currentCategory === category && 'navActive'}`} key={category}>
-                        <span
-                            onClick={() => {
-                                setCurrentCategory(category)
-                            }}
-                        >
-                            {category}
-                        </span>
+        <div>
+            <Navbar expand="lg" bg="dark" sticky="top">
+                <NavLink className="nav-link" to="/">
+                    <div class="text-light">
+                        <h4 class="nav-title-font">Cory Alport</h4>
+                    </div>
+                </NavLink>
+                <ul class="navbar-nav ml-auto navitem-indent">
+                    <li class="nav-item">
+                        <NavLink to="/about">
+                            <div class="nav-font text-light">About Me</div>
+                        </NavLink>
                     </li>
-                ))}
-            </ul>
-        </nav>
-    )
+                    <li class="nav-item">
+                        <NavLink to="/portfolio">
+                            <div class="nav-font text-light">Portfolio</div>
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink to="/contact">
+                            <div class="nav-font text-light">Contact</div>
+                        </NavLink>
+                    </li>
+                </ul>
+            </Navbar>
+        </div>
+    );
 }
 
-export default Nav;
+export default Navigation;

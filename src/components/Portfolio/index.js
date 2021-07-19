@@ -1,20 +1,28 @@
-import React, {useState} from 'react';
-import Project from '../Project';
-import projects from '../../assets/projects.json'
+import React from 'react';
+import ProjectCards from '../../components/Project'
+import portfolio from '../../portfolio.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Portfolio () {
-    // console.log(projects);
-    const [projectList] = useState(projects);
-    // console.log(projectList);
+function Wrapper(props) {
+    return <div className="wrapper">{props.children}</div>;
+}
+
+function Portfolio() {
+
     return (
-        <div className="portfolio">
-            <h2 id="portfolio">My Portfolio</h2>
-            <div className="projects row">
-                {projectList.map((project) => (
-                    <Portfolio project={project} key={project.id} />
-                ))}
+        <section className="container">
+            <div className="project">
+                <h2 className="top-title">Portfolio</h2>
+                <hr></hr>
             </div>
-        </div>
+
+            <Wrapper id="card-data">
+                {portfolio.map((project) => (
+                    <ProjectCards key={project.id} image={project.image} name={project.name} github={project.github} deploy={project.deploy} topics={project.topics} />
+                ))}
+            </Wrapper>
+        </section>
+
     );
 }
 
