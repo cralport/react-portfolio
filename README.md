@@ -2,11 +2,17 @@
 
 ## Description
 
-This is my React portfolio, showing my project work
+This is my React portfolio, showing my project work from my bootcamp, group work and side projects to better my skills and showcase them.
 
 ## Installation
 
-This is a React using 
+This is a react application using:
+
+React
+
+Bootstrap
+
+Use ```npm install``` to get the proper dependencies and then use ```npm start``` to run the application.
 
 ## Usage
 
